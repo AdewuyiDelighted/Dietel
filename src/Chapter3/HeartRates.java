@@ -52,17 +52,10 @@ public class HeartRates {
     public int getYearOfBirth(){
         return yearOfBirth;
     }
-    //public void setAge(int birthYear , int currentYear){
-      //  int yourAge = currentYear - birthYear;
-        //this.age = yourAge;
-    //}
+
     public int getAge(){
         return 2023 - yearOfBirth ;
     }
-    //public void setMaximumHeartRate(int yearOfBirth , int currentYear) {
-        //int heartRate = 220 - (currentYear - yearOfBirth);
-        //this.maximumHeartRate = heartRate;
-    //}
 
     public int getMaximumHeartRate(){
         int heartRate = 220 - getAge();

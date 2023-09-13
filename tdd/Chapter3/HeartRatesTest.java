@@ -28,8 +28,6 @@ public class HeartRatesTest {
         heart.setDayOfBirth(date);
         heart.setMonthOfBirth(month);
         heart.setYearOfBirth(year);
-        //heart.setAge(2002,2023);
-        //heart.setMaximumHeartRate(2002,2023);
 
         System.out.println(" ");
         System.out.println("FirstName : " + heart.getFirstName());

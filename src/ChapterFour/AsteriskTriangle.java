@@ -2,7 +2,7 @@ package ChapterFour;
 
 import java.util.Scanner;
 
-public class AsteriskPattern {
+public class AsteriskTriangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the base of triangle between 1 - 10: ");

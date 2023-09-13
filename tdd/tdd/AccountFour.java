@@ -8,7 +8,7 @@ public class AccountFour {
         this.balance += amount;
 
     }
-    public int balance (){
+    public int balance(){
 
         return balance;
     }
