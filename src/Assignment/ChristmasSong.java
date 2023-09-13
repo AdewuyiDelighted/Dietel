@@ -2,17 +2,11 @@ package Assignment;
 
 import java.util.Scanner;
 
-public class ChristmasSong{
+public class ChristmasSong {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-       System.out.println("Enter a number ");
-        int number =1;
+        int number = 1;
         while (number <= 12) {
-            number = scanner.nextInt();
-            if(number> 12) {
-                System.out.println("Enter a valid number");
-                number= scanner.nextInt();
-            }
+
             switch (number) {
                 case 1:
                     System.out.println("On the first day of Christmas , my true love sent to me");
@@ -24,7 +18,7 @@ public class ChristmasSong{
                     System.out.println("On the third day of Christmas ,my true love sent to me");
                     break;
                 case 4:
-                    System.out.println("On the fouth day of Christmas ,my true love sent to me");
+                    System.out.println("On the fourth day of Christmas ,my true love sent to me");
                     break;
                 case 5:
                     System.out.println("On the fifth day of Christmas ,my true love sent to me");
@@ -50,7 +44,9 @@ public class ChristmasSong{
                 case 12:
                     System.out.println("On the twelveth day of Christmas,my true love sent to me");
                     break;
+
             }
+
             switch (number) {
                 case 12:
                     System.out.println("Twelve drummers drumming");
@@ -87,11 +83,10 @@ public class ChristmasSong{
 
                 case 1:
                     System.out.println("A partridge in the pear tree");
-
-
             }
+            number++;
         }
+
+
     }
-
 }
-
