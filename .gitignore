@@ -27,5 +27,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-src/ChapterFour/CreditLimit.java
-src/ChapterFour/FactorialB.java
+src/ChapterFour/BinaryNumber.java
+src/ChapterFour/TabularOutput.java

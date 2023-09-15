@@ -19,7 +19,7 @@ public class GasMileageTwo {
             gallons = scanner.nextInt();
             gas.gallons(gallons);
             gas.miles(miles);
-                gas.gallons(gallons);
+            gas.gallons(gallons);
             gas.milesPerGallons();
                 System.out.println(gas.milesPerGallons());
 
