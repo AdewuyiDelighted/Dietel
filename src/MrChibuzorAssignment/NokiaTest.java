@@ -1,5 +1,5 @@
 
-package Assignment;
+package MrChibuzorAssignment;
 
 import java.util.Scanner;
 
