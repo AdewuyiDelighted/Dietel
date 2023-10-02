@@ -26,6 +26,4 @@ bin/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
-src/ChapterFour/BinaryNumber.java
-src/ChapterFour/TabularOutput.java
+.DS_Store C:\Users\Semicolon\IdeaProjects\JavaAssessmentTwo\test\ClassAssessment
