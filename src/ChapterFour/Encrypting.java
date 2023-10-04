@@ -17,13 +17,8 @@ public class Encrypting {
         int digitThreee = 0;
         int digitFourr = 0;
 
-        int swapOne = digitOnee;
+        int swapOne = digitFourr;
         int swapTwo = digitTwoo;
-        int swapThree = digitThreee;
-        int swapFour = digitFourr;
-
-
-
 
 
         while (number > 9999 || number < 1000) {
@@ -36,7 +31,7 @@ public class Encrypting {
         digitFour = number % 10;
 
         digitOnee = digitOne + 7 % 10;
-        digitTwoo = digitTwoo + 7 % 10;
+        digitTwoo = digitTwo + 7 % 10;
         digitThreee = digitThree + 7 % 10;
         digitFourr = digitFour + 7 % 10;
 
