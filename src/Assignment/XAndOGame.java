@@ -4,13 +4,14 @@ import java.util.Arrays;
 
 public class XAndOGame {
     public static void main(String[] args) {
-        char [] []  game = { {'x','o','x'}, {'x','x','o'},{'o','x','x'} };
-            for(int num = 0;num < game.length;num++){
-                for(int count = 0;count < game.length;count++){
-                    System.out.print(game[num][count] + " | ");
-                }
-                System.out.println(" ");
-            }
+        char [] []  game = { {'x','o','x','6'}, {'x','x','o'},{'o','x','x'} };
+            //for(int num = 0;num < game.length;num++){
+                //for(int count = 0;count < game.length;count++){
+                    //System.out.print(game[num][count] + " | ");
+                    System.out.print(game[0][3]);
+                //}
+                //System.out.println(" ");
+            //}
 
 
 

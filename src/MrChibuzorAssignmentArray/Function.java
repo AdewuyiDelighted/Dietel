@@ -30,10 +30,11 @@ public class Function {
         boolean result = false;
         for (int num = 0; num < number.length; num++) {
             if (element == number[num]) {
-                result = true;
+                //result = true;
+                return true;
             }
         }
-        return result;
+        return false;
     }
     public static int[] oddlyPlaced(int[] number) {
         int[] oddPlaced = new int[number.length / 2];
@@ -153,6 +154,10 @@ public class Function {
             sum ++;
        }
         return reverse;
+
+
+
+
     }
 }
 

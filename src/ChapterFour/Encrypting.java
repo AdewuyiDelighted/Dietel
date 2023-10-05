@@ -1,4 +1,4 @@
-package ChapterThree;
+package ChapterFour;
 
 import java.util.Scanner;
 
@@ -12,13 +12,17 @@ public class Encrypting {
         int digitThree = 0;
         int digitFour = 0;
 
-        int digitOnee = 0;
-        int digitTwoo = 0;
-        int digitThreee = 0;
-        int digitFourr = 0;
+        int calculateOne = 0;
+        int calculateTwo = 0;
+        int calculateThree = 0;
+        int calculateFour = 0;
 
-        int swapOne = digitFourr;
-        int swapTwo = digitTwoo;
+        int totalOne = 0;
+        int totalTwo = 0;
+        int totalThree = 0;
+        int totalFour = 0;
+
+
 
 
         while (number > 9999 || number < 1000) {
@@ -30,59 +34,36 @@ public class Encrypting {
         digitThree = number / 10 % 10 ;
         digitFour = number % 10;
 
-        digitOnee = digitOne + 7 % 10;
-        digitTwoo = digitTwo + 7 % 10;
-        digitThreee = digitThree + 7 % 10;
-        digitFourr = digitFour + 7 % 10;
-
-        swapOne = digitOne;
-        swapTwo = digitTwo;
-
-
-        digitOnee = digitThreee;
-        digitThreee = swapOne;
-        digitTwoo =digitFourr;
-        digitFourr = swapTwo;
+        calculateOne = digitOne + 7 ;
+        calculateTwo = digitTwo + 7 ;
+        calculateThree = digitThree + 7 ;
+        calculateFour = digitFour + 7 ;
 
 
 
+         totalOne = calculateOne % 10;
+         totalTwo = calculateTwo % 10;
+         totalThree = calculateThree % 10;
+         totalFour = calculateFour % 10;
+
+         int swap = totalOne;
+         int swapTwo = totalTwo;
+
+         totalOne = totalThree;
+         totalTwo = totalFour;
+         totalThree = swap;
+         totalFour = swapTwo;
 
 
 
 
-        System.out.println(digitOnee);
-        System.out.println(digitTwoo);
-        System.out.println(digitThreee);
-        System.out.println(digitFourr);
+
+
+
+
+        System.out.printf("%s%d%d%d%d","The encrypted integer is ",totalOne,totalTwo,totalThree,totalFour);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//             for(int num = 1;num <= 4;num++) {
-//            digit = number /1000 % 10;
-//             total = digit + 7;
-//            totall = total %10;
-//            divide /= 10;
-//            System.out.println(digit);
-//
-//
-//            }
 
 
 

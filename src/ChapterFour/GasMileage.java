@@ -6,7 +6,7 @@ public class GasMileage {
     private int miles;
     private int gallons;
     private double total;
-    private int combinedMiles;
+    private double combinedMiles;
 
 
     public void miles(int mile) {
@@ -22,14 +22,18 @@ public class GasMileage {
         return gallons;
     }
 
-    public int milesPerGallons() {
-        int total =  miles/gallons;
-        return total;
+    public void setMilePerGallon() {
+        combinedMiles = (double) miles/ gallons;
     }
-    public int combinedMilesPerGallons(){
-        int count = 1;
-        count +=milesPerGallons();
-        return count;
+
+    public double getMilesPerGallons() {
+       return combinedMiles;
+    }
+    public void  setCombinedMilesPerGallons() {
+        total += getMilesPerGallons();
+    }
+    public  double getCombinedMilesPerGallons(){
+        return total;
     }
 }
 
