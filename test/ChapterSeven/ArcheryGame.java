@@ -1,4 +1,4 @@
-package StudentPackage;
+package ChapterSeven;
 
 
 import java.util.Arrays;
@@ -25,7 +25,9 @@ public class ArcheryGame {
         int row = scanner.nextInt();
         System.out.println("number of square :");
         int column = scanner.nextInt();
+// COLLECT ALL DATA INTO A PARAMETER
 
+        // USER SCANNER IN THE MAIN METHOD
         int count = 0;
         int[] numberOfPlayer = new int[4];
         int[] scoreOne = new int[4];

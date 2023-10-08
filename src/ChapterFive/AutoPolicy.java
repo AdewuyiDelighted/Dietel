@@ -1,5 +1,7 @@
 package ChapterFive;
 
+import java.util.Objects;
+
 public class AutoPolicy {
 
     private int accountNumber;
@@ -28,11 +30,11 @@ public class AutoPolicy {
     }
 
     public void setState(String state) {
-        if (state == "CT") {
+        if (Objects.equals(state, "CT")) {
             this.state = state;
         }
-        else if(state == "MA"||state == "ME"|| state == "NH" ||
-                state == "NJ" ||state == "NY"|| state == "PA"|| state == "VT" ){
+        else if(Objects.equals(state, "MA") || Objects.equals(state, "ME") || Objects.equals(state, "NH") ||
+                Objects.equals(state, "NJ") || Objects.equals(state, "NY") || Objects.equals(state, "PA") || Objects.equals(state, "VT")){
             this.state = state;
         }
         else{

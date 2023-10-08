@@ -1,6 +1,7 @@
 package Chapter3;
 
-public class PetrolPurchase {
+public class PetrolPurchaseNew {
+
     private String stationLocation;
     private String type;
     private int quantity;
@@ -8,7 +9,7 @@ public class PetrolPurchase {
     private double percentageDiscount;
 
 
-    public PetrolPurchase( String stationLocation, String type , int quantity, double price , double percentageDiscount
+    public PetrolPurchaseNew(String stationLocation, String type , int quantity, double price , double percentageDiscount
     ){
         this.stationLocation = stationLocation;
         this.type = type;
@@ -16,7 +17,13 @@ public class PetrolPurchase {
         this.price = price;
         this.percentageDiscount =  percentageDiscount;
 
+
     }
+
+
+
+
+
 
     public void setStationLocation(String location) {
 
@@ -44,18 +51,15 @@ public class PetrolPurchase {
         return price;
     }
 
-    public void setPercentageDiscount(double discount){
-        this.percentageDiscount = discount;
+    public void setPercentageDiscount(int discount){
+        this.percentageDiscount = (double) discount/100;
 
     }
-
     public double getPercentageDiscount(){
         return percentageDiscount;
     }
     public double getPurchaseAmount(){
-        double netAmount = quantity * price - percentageDiscount;
-        return netAmount;
+        int amount = (int) (price * quantity);
+        return  amount - (amount * percentageDiscount);
     }
-
-
 }

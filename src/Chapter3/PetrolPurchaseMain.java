@@ -2,10 +2,10 @@ package Chapter3;
 
 
 
-public class PetrolPurchaseTest {
+public class PetrolPurchaseMain {
     public static void main(String[] args) {
 
-        PetrolPurchase petrol = new PetrolPurchase("Yaba","petrol gangan", 5, 200.90,23.2);
+        PetrolPurchaseNew petrol = new PetrolPurchaseNew("Yaba","petrol gangan", 5, 200.90,23.2);
 
         petrol.setStationLocation("Sango");
         petrol.setType("fuel");

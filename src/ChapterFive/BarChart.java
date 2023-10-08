@@ -6,7 +6,11 @@ import java.util.Scanner;
 
 public class BarChart {
     public static void main(String[] args) {
-        int bar = 0;
+        barOfAsterisks(5);
+    }
+
+        public static void barOfAsterisks(int number){
+            int bar = 0;
         for(int num = 1; num <= 5; num++) {
             Random random = new Random();
             bar = random.nextInt(30);

@@ -2,11 +2,18 @@ package ChapterFive;
 
 public class BreakReplacement {
     public static void main(String[] args) {
-        for(int count = 1;count <= 10 ;count ++){
+        breakReplacement(7);
 
-            System.out.print(count + " ");
+    }
+        public static void breakReplacement(int number){
+        int numberBefore = number - 1;
+        for(int count = 1;count <= 10;){
+            System.out.println(count);
+            count++;
+            if(count > numberBefore){
+               count = count + count +1;
+            }
         }
-
-        }
+    }
     }
 
