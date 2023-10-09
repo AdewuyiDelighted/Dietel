@@ -77,7 +77,7 @@ public class CardCheckerTwo {
             message = "Discover Card";
         } else {
             message = "Invalid card";
-            //}
+
         }
         System.out.println(message);
     }
