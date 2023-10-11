@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
  public class CardCheckerTest {
      @Test
+     
      public void testTheCardValidator(){
          String number = "4388576018402626";
          assertEquals(37,CardCheckerTwo.confirmAccountNumber(number));
