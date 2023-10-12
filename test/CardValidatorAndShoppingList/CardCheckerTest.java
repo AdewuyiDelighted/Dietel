@@ -1,4 +1,4 @@
-package CardValidator;
+package CardValidatorAndShoppingList;
 
 import org.junit.jupiter.api.Test;
 

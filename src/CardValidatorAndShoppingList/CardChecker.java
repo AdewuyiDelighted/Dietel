@@ -1,4 +1,4 @@
-package CardValidator;
+package CardValidatorAndShoppingList;
 
 
 import java.util.Scanner;

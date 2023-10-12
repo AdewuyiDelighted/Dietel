@@ -1,4 +1,4 @@
-package CardValidator;
+package CardValidatorAndShoppingList;
 
 public class CardCheckerTwo {
     public static int confirmAccountNumber(String numbers) {
