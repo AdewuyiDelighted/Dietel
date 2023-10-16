@@ -6,7 +6,7 @@ import java.util.Objects;
 public class GreatestCommonDivisor {
     public static void main(String[] args) {
         // System.out.println(max(8, 4, 3, 2, 1));
-        //System.out.println(duplicate(8, 4, 3, 2, 1));
+       // System.out.println(duplicate(8, 4, 3, 2, 1));
          System.out.println(gcd(8,4,3,2,1));
     }
 
@@ -78,7 +78,7 @@ public class GreatestCommonDivisor {
                 if(duplicates.get(num) == 0) {
                     continue;
                 }
-                 if(numbers[numb] % duplicates.get(num) == 0){
+                 if(numbers[num] % duplicates.get(numb) == 0){
                     hcf = duplicates.get(num);
                 }
 

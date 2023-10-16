@@ -10,6 +10,7 @@ public class CombinationsOfTwoNumbers {
             System.out.println("Enter number " + (num+1)+" of " + array.length+" numbers");
             array[num] = scanner.nextInt();
         }
+        int combination = 0;
         int fatorialTotalNumbers = 1;
         int factorialPickTwo = 1;
         int factorialSubtract = 1;
@@ -31,7 +32,8 @@ public class CombinationsOfTwoNumbers {
             }
 
         }
-
-
+        int almost_combination = 2 * factorialSubtract;
+        combination = fatorialTotalNumbers / almost_combination;
+        System.out.println(combination);
     }
 }
