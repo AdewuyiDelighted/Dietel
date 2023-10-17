@@ -26,6 +26,7 @@ public class CombinationsOfTwoNumbers {
             }
             if(num == subtract){
                 factorialSubtract *= num;
+
                 subtract--;
 
 
