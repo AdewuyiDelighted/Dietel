@@ -1,4 +1,4 @@
-package MrFemiAssigmnent;
+package MrFemiAssigmnentAndClassAssesment;
 
 import java.util.Scanner;
 
