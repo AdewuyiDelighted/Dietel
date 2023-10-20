@@ -11,23 +11,24 @@ public class MBTITest {
 
     static int countResponse = 0;
     static int countResponseTwo = 0;
-   static String[] setOne = new String[5];
+  // static String[] setOne = new String[5];
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(questionSetOne()));
-        System.out.println(Arrays.toString(questionSetTwo()));
-        System.out.println(Arrays.toString(questionSetThree()));
-        System.out.println(Arrays.toString(questionSetFour()));
+       System.out.println(Arrays.toString(questionSetTwo()));
+       System.out.println(Arrays.toString(questionSetThree()));
+       System.out.println(Arrays.toString(questionSetFour()));
         System.out.println("Hello What is your name");
         String name = scanner.nextLine();
         System.out.println("Hello "+name+" You selected");
-        for(int index = 0; index < 5;index++) {
-            System.out.println(setOne[index]);
-        }
+//        for(int index = 0; index < 5;index++) {
+//            System.out.println(setOne[index]);
+//        }
     }
 
 
     public static String [] questionSetOne() {
+        String[] setOne = new String[5];
         for (int index = 0; index < setOne.length; index++) {
             switch (index) {
                 case 0:
@@ -43,6 +44,7 @@ public class MBTITest {
                     } else if (answer.equals(responseTwo)) {
                         setOne[index] = "B.Conserve energy, enjoy one on one";
                     }
+                    break;
 
                 case 1:
                     System.out.println("""
@@ -57,6 +59,7 @@ public class MBTITest {
                     } else if (questionTwo.equals(responseTwo)) {
                         setOne[index] = "More Reserved,Think to yourself";
                     }
+                    break;
                 case 2:
                     System.out.println("""
                             A. Seek many tasks,public activities interaction with others              B.Seek private solitary activities with quiet to concentrate""");
@@ -70,6 +73,7 @@ public class MBTITest {
                     } else if (questionThree.equals(responseTwo)) {
                         setOne[index] = "Seek private solitary activities with quiet to concentrate";
                     }
+                    break;
                 case 3:
                     System.out.println("""
                             A. External, communicative,express yourself               B.Internal,reticent,keep to yourself""");
@@ -83,6 +87,7 @@ public class MBTITest {
                     } else if (questionFour.equals(responseTwo)) {
                         setOne[index] = "Internal,reticent,keep to yourself";
                     }
+                    break;
                 case 4:
                     System.out.println("""
                             A. Active,initiate             B.Reflective,deliberate""");
@@ -112,7 +117,7 @@ public class MBTITest {
                                 questionSetTwo();
                             }
 
-                    }
+                    }break;
 
             }
 
@@ -141,6 +146,7 @@ public class MBTITest {
                     } else if (questionSix.equals(responseTwo)) {
                         setTwo[index] = "Look for meaning and possibilities";
                     }
+                    break;
                 case 1:
                     System.out.println("""
                             A.Practical, realistic,experiential                     B.Imaginative,Innovative,Theoretical""");
@@ -155,6 +161,7 @@ public class MBTITest {
                         setTwo[index] = "Imaginative,Innovative,Theoretical";
 
                     }
+                    break;
                 case 2:
                     System.out.println("""
                             A.Standard, usual,conventional                                 B.Different, novel,unique""");
@@ -169,6 +176,7 @@ public class MBTITest {
                         setTwo[index] = "Different, novel,unique";
 
                     }
+                    break;
 
                 case 3:
                     System.out.println("""
@@ -183,6 +191,7 @@ public class MBTITest {
                     } else if (questionNine.equals(responseTwo)) {
                         setTwo[index] = "Global perspective, Big Picture";
                     }
+                    break;
                 case 4:
                     System.out.println("""
                             A.Facts,Things,What is                                                                  B.Ideas,Dreams,What Could Be""");
@@ -201,7 +210,7 @@ public class MBTITest {
                     String next = scanner.nextLine().toUpperCase();
                     switch (next) {
                         case "C":
-                            questionSetThree();
+                            //questionSetThree();
                         default:
                             while (!next.equals(rec)) {
                                 System.out.println("Invalid input(Enter C to move to the next set of questions");
@@ -212,7 +221,7 @@ public class MBTITest {
                             }
 
 
-                    }
+                    }break;
             }
 
 
@@ -237,6 +246,7 @@ public class MBTITest {
                     } else if (questionEleven.equals(responseTwo)) {
                         setThree[index] = "Empathetic,Feeling,Accommodating";
                     }
+                    break;
                 case 1:
                     System.out.println("""
                             A. Candid,Straight forward,Frank                                                 B.Tactful,Kind,Encouraging""");
@@ -250,7 +260,7 @@ public class MBTITest {
                     } else if (questionTwelve.equals(responseTwo)) {
                         setThree[index] = "Tactful,Kind,Encouraging";
 
-                    }
+                    }break;
                 case 2:
                     System.out.println("""
                             A.Tough-Minded,just                                                                       B.Tender-hearted,Merciful""");
@@ -264,7 +274,7 @@ public class MBTITest {
                     } else if (questionThirteen.equals(responseTwo)) {
                         setThree[index] = ".Tender-hearted,Merciful";
 
-                    }
+                    }break;
                 case 3:
                     System.out.println("""
                             A.Firm,Tend to criticize,hold the line                                                          B.Gentle ,Tend to appreciate,conciliate""");
@@ -278,7 +288,7 @@ public class MBTITest {
                     } else if (questionFourteen.equals(responseTwo)) {
                         setThree[index] = "Gentle ,Tend to appreciate,conciliate";
 
-                    }
+                    }break;
 
                 case 4:
                     System.out.println("""
@@ -310,7 +320,7 @@ public class MBTITest {
                             }
 
 
-                    }
+                   }
             }
 
         }
@@ -334,7 +344,7 @@ public class MBTITest {
                     } else if (questionSixteen.equals(responseTwo)) {
                         setFour[index] = "More reserved,think to yourself";
 
-                    }
+                    }break;
 
 
                 case 1:
@@ -350,7 +360,7 @@ public class MBTITest {
                     } else if (questionSeventeen.equals(responseTwo)) {
                         setFour[index] = "Unplanned,Spontaneous";
 
-                    }
+                    }break;
 
 
                 case 2:
@@ -366,7 +376,7 @@ public class MBTITest {
                     } else if (questionEighteen.equals(responseTwo)) {
                         setFour[index] = "Easy-going,live,let live";
 
-                    }
+                    }break;
                 case 3:
                     System.out.println("""
                             A.Preparation,plan ahead                                                          B.Go With the flow,adapt as you go""");
@@ -380,7 +390,7 @@ public class MBTITest {
                     } else if (questionNineteen.equals(responseTwo)) {
                         setFour[index] = "Go With the flow,adapt as you go";
 
-                    }
+                    }break;
 
                 case 4:
                     System.out.println("""
