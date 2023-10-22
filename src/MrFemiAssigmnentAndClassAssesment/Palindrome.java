@@ -2,15 +2,15 @@ package MrFemiAssigmnentAndClassAssesment;
 
 public class Palindrome {
     public static void main(String[] args) {
-        palindrome("noon");
+        palindrome("delighted");
     }
     public static void palindrome(String words) {
         int length = words.length();
         String reverse = "";
-        char input = ' ';
+        //char input = ' ';
         System.out.println(length);
-        for (int index = length-1; index > 0; index++) {
-            reverse += words.charAt(index);
+        for (int index = length-1; index >= 0; index--) {
+            reverse += words.charAt(index)+" ";
             System.out.println(reverse);
         }
     }

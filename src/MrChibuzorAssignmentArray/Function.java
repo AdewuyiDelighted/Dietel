@@ -30,7 +30,7 @@ public class Function {
         boolean result = false;
         for (int num = 0; num < number.length; num++) {
             if (element == number[num]) {
-                //result = true;
+
                 return true;
             }
         }

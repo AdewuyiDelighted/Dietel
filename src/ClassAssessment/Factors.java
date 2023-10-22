@@ -15,6 +15,7 @@ public class Factors {
                 counter++;
 
 
+
                System.out.println(input);
             }
 
