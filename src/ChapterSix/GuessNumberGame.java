@@ -15,11 +15,10 @@ public class GuessNumberGame {
             SecureRandom secureRandom = new SecureRandom();
             System.out.println("Enter a number between 1 and 1000");
             int answer = scanner.nextInt();
-            int randomAnswer = secureRandom.nextInt(1000);
+            int randomAnswer = secureRandom.nextInt(5);
             while (answer != randomAnswer) {
                 if (answer > randomAnswer) {
                     System.out.println("Answer too high(Try again)");
-                    System.out.println(randomAnswer);
                     answer = scanner.nextInt();
                 }
                 if (answer < randomAnswer) {

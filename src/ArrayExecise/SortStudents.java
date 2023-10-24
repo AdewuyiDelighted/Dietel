@@ -15,12 +15,12 @@ public class SortStudents {
         String[] names = new String[noOfStudent];
         int minimum = 0;
 
-        for (int num = 0; num < noOfStudent; num++) {
-            //names[num] = scanner.nextLine();
-           // scanner.nextLine();
-            System.out.println("Enter the score of student");
-            scores[num] = scanner.nextInt();
-        }
+//        for (int num = 0; num < noOfStudent; num++) {
+//            //names[num] = scanner.nextLine();
+//           // scanner.nextLine();
+//            System.out.println("Enter the score of student");
+//            scores[num] = scanner.nextInt();
+//        }
 
 
         for(int num = 0;num < noOfStudent;num++){

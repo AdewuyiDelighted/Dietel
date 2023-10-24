@@ -2,25 +2,25 @@ package MrChibuzorAssignment;
 
 public class DecimalToBinary {
     public static void main(String[] args) {
-        System.out.println(reverse(13));
+        System.out.println(decimalToBinary(13));
 
 
     }
 
 
-    public static String decimalToBinary(int decimal) {
+    public static String convertToBinary(int decimal) {
         String input = "";
         while (decimal != 0) {
             int reminder = decimal % 2;
             decimal /= 2;
-            input = reminder + " ";
+            input += reminder + "";
 
         }
         return input;
     }
 
-    public static String reverse(int decimal) {
-        String binary = decimalToBinary(decimal);
+    public static String decimalToBinary(int decimal) {
+        String binary = convertToBinary(decimal);
         String reverse = "";
         for (int index = binary.length() - 1; index >= 0; index--) {
             reverse += binary.charAt(index);

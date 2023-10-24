@@ -17,7 +17,7 @@ class ProductOfPrimeFactorTest {
     public void testTheProductOfPrimeNumber(){
         int input = 30;
         String result = ProductOfPrimeFactor.primeFactors(input);
-        String answer ="2223";
+        String answer ="235";
         assertEquals(answer,result);
 
     }
