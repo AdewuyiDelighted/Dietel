@@ -19,6 +19,7 @@ public class PrimeNumber {
 
 
         return false;
+
     }
     public static void primeInTenThousand(){
         int count = 0;
