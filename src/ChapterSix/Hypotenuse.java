@@ -19,7 +19,9 @@ public class Hypotenuse {
         double powerOne = Math.pow(sideOne, 2);
         double powerTwo = Math.pow(sideTwo, 2);
         double sum = powerOne + powerTwo;
-        return Math.sqrt(sum);
+        String convertToString = String.format("%.1f",Math.sqrt(sum));
+         return Double.parseDouble(convertToString);
+
     }
 
 }

@@ -3,7 +3,7 @@ package ChapterSix;
 import java.security.SecureRandom;
 import java.util.Scanner;
 
-public class ComputedAssistedInstructionModify {
+public class ComputedAssistedInstructionModify{
     public static void main(String[] args) {
         questions();
     }

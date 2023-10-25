@@ -5,14 +5,19 @@ import java.util.Scanner;
 public class ParkingCharges {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         double totalCharges = 0.0;
+
         System.out.println("Enter the hours at which the current car has used in the park");
         int currentCarHours = scanner.nextInt();
         double amount = calculateCharges(currentCarHours);
+
         System.out.println("The charge for the current customer is " + amount);
         System.out.println("  ");
+
         System.out.println("The number of cars parked yesterday at car park");
         int yesterdaySales = scanner.nextInt();
+
         for(int number = 0; number < yesterdaySales; number++) {
             System.out.println("Enter the number of hours car " + (number + 1));
             int hoursCarSpent = scanner.nextInt();

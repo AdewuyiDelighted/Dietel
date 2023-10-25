@@ -7,7 +7,8 @@ import java.util.Arrays;
 
 public class HCF {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(highestCommonFactor(30,75)));
+
+        System.out.println(Arrays.toString(highestCommonFactor(420,1782)));
     }
 
 

@@ -24,6 +24,9 @@ public class TemperatureConversion {
     }
 
     public static double celsius (int kelvin ){
-        return kelvin - 273.15;
+                double  celsius = kelvin - 273.15;
+                String value = String.format("%.1f",celsius);
+                return Double.parseDouble(value);
+
     }
 }

@@ -4,16 +4,17 @@ import java.util.Scanner;
 
 public class DisplayByFive {
     public static void main(String[] args) {
-        System.out.println(divisibleByFive());
+
+
+        System.out.println(divisibleByFive(5,12,15,20,25,30,35,40,45,50));
     }
-    public static boolean divisibleByFive() {
+    public static boolean divisibleByFive(int...input) {
         int count = 0;
-        Scanner scanner = new Scanner(System.in);
+        int counter = 0;
         for (int num = 1; num <= 10; num++) {
-            System.out.println("Enter number " + num);
-            int input = scanner.nextInt();
-            if (input % 5 == 0) {
+            if (input[counter] % 5 == 0) {
                 count++;
+                counter++;
             }
             if (count == 10) {
                 return true;

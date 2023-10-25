@@ -23,15 +23,16 @@ public class PrimeNumber {
     }
     public static void primeInTenThousand(){
         int count = 0;
-        int prime = 0;
-        int tenThousand = 10;
+        int tenThousand = 10000;
         for(int index = 2;index < tenThousand;index++) {
+            count = 0;
             for (int indices = 1; indices <= index; indices++) {
                 if (index % indices == 0) {
                     count++;
                 }
             }
             if(count <= 2) {
+
                 System.out.println(index);
             }
         }
