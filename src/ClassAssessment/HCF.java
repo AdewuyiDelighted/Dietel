@@ -11,7 +11,7 @@ public class HCF {
     }
 
 
-    public static int max(int... numbers) {
+    public static int maximum(int... numbers) {
         int length = numbers.length;
         int max = numbers[0];
         for (int index = 0; index < length; index++) {
@@ -23,15 +23,15 @@ public class HCF {
     }
 
     public static ArrayList<Integer> maxPrimeFactors(int... numbers) {
-        int length = max(numbers);
-        int index = 2;
+        int maximum = maximum(numbers);
+        int divisor = 2;
         ArrayList<Integer> primeFactors = new ArrayList<>();
-        while (length != 1) {
-            if (length % index == 0) {
-                primeFactors.add(index);
-                length /= index;
+        while (maximum != 1) {
+            if (maximum % divisor == 0) {
+                primeFactors.add(divisor);
+                maximum /= divisor;
             } else {
-                index++;
+                divisor++;
             }
         }
 
@@ -42,26 +42,33 @@ public class HCF {
     public static int [] highestCommonFactor(int... numbers) {
         ArrayList<Integer> maxPrimeNumbers = maxPrimeFactors(numbers);
         ArrayList<Integer> hcf = new ArrayList<>();
-        int count = 0;
+        int numberOfDivide = 0;
+        int divisor = 0;
 
         for (int index = 0; index < maxPrimeNumbers.size(); index++) {
-            int divisor = maxPrimeNumbers.get(index);
-
+            divisor = maxPrimeNumbers.get(index);
             for (int indexs = 0; indexs < numbers.length; indexs++) {
                 if (numbers[indexs] % divisor == 0) {
                     numbers[indexs] /= divisor;
-                    count++;
+                    numberOfDivide++;
                 }
-
             }
-            if (count == numbers.length) {
-                hcf.add(maxPrimeNumbers.get(index));
+            if (numberOfDivide == numbers.length) {
+                hcf.add(divisor);
             }
-                count = 0;
-
+                numberOfDivide = 0;
         }
-        return DominantNumber.convertListToArray(hcf);
+        return convertListToArray(hcf);
     }
+
+    public static int[] convertListToArray(ArrayList<Integer> inputs){
+        int [] array = new int [inputs.size()];
+        for(int index = 0;index < array.length;index++){
+            array[index] = inputs.get(index);
+        }
+        return array;
+    }
+
 }
 
 
