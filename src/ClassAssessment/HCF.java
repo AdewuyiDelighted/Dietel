@@ -1,12 +1,15 @@
 package ClassAssessment;
 
+import MrFemiAssigmnentAndClassAssesment.DominantNumber;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class HCF {
     public static void main(String[] args) {
-        System.out.println(HighestCommon(6, 12, 18));
+        System.out.println(Arrays.toString(highestCommonFactor(30,75)));
     }
+
 
     public static int max(int... numbers) {
         int length = numbers.length;
@@ -19,23 +22,45 @@ public class HCF {
         return max;
     }
 
-    public static ArrayList<Integer> HighestCommon(int... numbers) {
-        ArrayList<Integer> factors = new ArrayList<>();
-        int divisor = 2;
-       // while (numbers[index] != 1) {
-        for (int index = 0; index < numbers.length;index++) {
-            while (numbers[index] != 1) {
-                if (numbers[index] % divisor == 0) {
-                    factors.add(divisor);
-                   // numbers[index] /= divisor;
-                } else {
-                    divisor++;
-                   // numbers[index] /= divisor;
-                }
-                numbers[index] /= divisor;
+    public static ArrayList<Integer> maxPrimeFactors(int... numbers) {
+        int length = max(numbers);
+        int index = 2;
+        ArrayList<Integer> primeFactors = new ArrayList<>();
+        while (length != 1) {
+            if (length % index == 0) {
+                primeFactors.add(index);
+                length /= index;
+            } else {
+                index++;
             }
         }
-        return factors;
+
+        return primeFactors;
+
+    }
+
+    public static int [] highestCommonFactor(int... numbers) {
+        ArrayList<Integer> maxPrimeNumbers = maxPrimeFactors(numbers);
+        ArrayList<Integer> hcf = new ArrayList<>();
+        int count = 0;
+
+        for (int index = 0; index < maxPrimeNumbers.size(); index++) {
+            int divisor = maxPrimeNumbers.get(index);
+
+            for (int indexs = 0; indexs < numbers.length; indexs++) {
+                if (numbers[indexs] % divisor == 0) {
+                    numbers[indexs] /= divisor;
+                    count++;
+                }
+
+            }
+            if (count == numbers.length) {
+                hcf.add(maxPrimeNumbers.get(index));
+            }
+                count = 0;
+
+        }
+        return DominantNumber.convertListToArray(hcf);
     }
 }
 
