@@ -5,11 +5,13 @@ import java.util.Scanner;
 
 public class ComputerAssistedInstruction {
     static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         promptStudent();
 
 
     }
+
     public static void promptStudent() {
         SecureRandom secureRandom = new SecureRandom();
         int firstTimesNumber = secureRandom.nextInt(9);
@@ -22,12 +24,13 @@ public class ComputerAssistedInstruction {
             print("How much is " + firstTimesNumber + " times " + secondTimesNumber);
             studentAnswer = scanner.nextInt();
         }
-        if (studentAnswer == answer){
+        if (studentAnswer == answer) {
             print("Very Good");
             generateQuestions();
         }
 
     }
+
     public static void generateQuestions() {
         SecureRandom random = new SecureRandom();
         int firstNumber = random.nextInt(9);
@@ -40,14 +43,14 @@ public class ComputerAssistedInstruction {
             print("How much is " + firstNumber + " times " + secondNumber);
             studentAnswer = scanner.nextInt();
         }
-        if (studentAnswer == randomAnswer){
+        if (studentAnswer == randomAnswer) {
             generateQuestions();
         }
     }
 
 
-public static void print(String input){
-    System.out.println(input);
-}
+    public static void print(String input) {
+        System.out.println(input);
+    }
 }
 

@@ -16,10 +16,7 @@ public class PrimeNumber {
         if (count == 2) {
             return true;
         }
-
-
         return false;
-
     }
     public static void primeInTenThousand(){
         int count = 0;

@@ -3,7 +3,7 @@ package ChapterSix;
 import java.security.SecureRandom;
 import java.util.Scanner;
 
-public class ComputedAssistedInstructionModify{
+public class ComputedAssistedInstructionModify {
     public static void main(String[] args) {
         questions();
     }
@@ -11,16 +11,20 @@ public class ComputedAssistedInstructionModify{
     public static void questions() {
         Scanner scanner = new Scanner(System.in);
         SecureRandom secureRandom = new SecureRandom();
+
         int randomOne = secureRandom.nextInt(9);
         int randomTwo = secureRandom.nextInt(9);
+
         System.out.println("How much is " + randomOne + " * " + randomTwo + "?");
         int answer = randomOne * randomTwo;
         int studentResponses = scanner.nextInt();
+
         while (studentResponses != answer) {
             notCorrectAnswerResponse();
             System.out.println("How much is " + randomOne + " * " + randomTwo + "?");
             studentResponses = scanner.nextInt();
         }
+
         if (studentResponses == answer) {
             correctAnswerResponse();
             generateNewQuestions();
@@ -33,6 +37,7 @@ public class ComputedAssistedInstructionModify{
     public static void correctAnswerResponse() {
         SecureRandom secureRandom = new SecureRandom();
         int response = secureRandom.nextInt(1, 5);
+
         switch (response) {
             case 1:
                 System.out.println("Very Good");
@@ -52,6 +57,7 @@ public class ComputedAssistedInstructionModify{
     public static void notCorrectAnswerResponse() {
         SecureRandom secureRandom = new SecureRandom();
         int response = secureRandom.nextInt(1, 5);
+
         switch (response) {
             case 1:
                 System.out.println("No,Please try again");
@@ -71,17 +77,22 @@ public class ComputedAssistedInstructionModify{
     public static void generateNewQuestions() {
         Scanner scanner = new Scanner(System.in);
         SecureRandom secureRandom = new SecureRandom();
+
         int numberOne = secureRandom.nextInt(9);
         int numberTwo = secureRandom.nextInt(9);
+
         System.out.println("How much is " + numberOne + " * " + numberTwo + "?");
+
         int studentResponse = scanner.nextInt();
         int answer = numberTwo * numberOne;
-        while (studentResponse != answer){
+
+        while (studentResponse != answer) {
             notCorrectAnswerResponse();
             System.out.println("How much is " + numberOne + " * " + numberTwo + "?");
             studentResponse = scanner.nextInt();
         }
-        if(studentResponse == answer){
+
+        if (studentResponse == answer) {
             correctAnswerResponse();
             generateNewQuestions();
         }

@@ -15,6 +15,7 @@ public class CAIStudentPerformance {
         int correctAnswer = 0;
         for (int index = 0; index < count; index++) {
             SecureRandom secureRandom = new SecureRandom();
+
             int randomOne = secureRandom.nextInt(9);
             int randomTwo = secureRandom.nextInt(9);
 
@@ -40,13 +41,14 @@ public class CAIStudentPerformance {
         if (result >= 75.0) {
             print(" ");
             print("Congratulation,You are ready to go to the next level");
-        } else if(result < 75.0) {
+        } else if (result < 75.0) {
             print("Please ask your teacher for extra help");
         }
     }
 
     public static void continues() {
         print("Next Student evaluation(Enter 1 to continue)");
+
         int response = scanner.nextInt();
         if (response == 1) {
             response = computeStudentPerformance(10);
@@ -58,6 +60,7 @@ public class CAIStudentPerformance {
 
     public static void combine() {
         int total = computeStudentPerformance(10);
+
         checkPercentage(total);
         continues();
     }

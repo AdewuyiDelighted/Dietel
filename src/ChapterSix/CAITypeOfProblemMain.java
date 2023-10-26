@@ -35,17 +35,21 @@ public class CAITypeOfProblemMain {
                         int minus = CAITypeOfProblems.subtraction(10);
                         CAIStudentPerformance.checkPercentage(minus);
                         break;
+
                     case 3:
                         int times = CAIStudentPerformance.computeStudentPerformance(10);
                         CAIStudentPerformance.checkPercentage(times);
                         break;
+
                     case 4:
                         int division = CAITypeOfProblems.divide(10);
                         CAIStudentPerformance.checkPercentage(division);
                         break;
+
                     case 5:
                         int mix = CAITypeOfProblems.mixedArithmetic();
                         CAIStudentPerformance.checkPercentage(mix);
+
                     default:
                         while (answer < 1 || answer > 5) {
 
@@ -61,15 +65,19 @@ public class CAITypeOfProblemMain {
                             if (answer == 1) {
                                 add = CAITypeOfProblems.addition(10);
                                 CAIStudentPerformance.checkPercentage(add);
+
                             } else if (answer == 2) {
                                 minus = CAITypeOfProblems.subtraction(10);
                                 CAIStudentPerformance.checkPercentage(minus);
+
                             } else if (answer == 3) {
                                 times = CAIStudentPerformance.computeStudentPerformance(10);
                                 CAIStudentPerformance.checkPercentage(times);
+
                             } else if (answer == 4) {
                                 division = CAITypeOfProblems.divide(10);
                                 CAIStudentPerformance.checkPercentage(division);
+
                             } else if (answer == 5) {
                                 mix = CAITypeOfProblems.mixedArithmetic();
                                 CAIStudentPerformance.checkPercentage(mix);
@@ -92,22 +100,27 @@ public class CAITypeOfProblemMain {
                         int add = CAITypeOfProblems.twoAddition(10);
                         CAIStudentPerformance.checkPercentage(add);
                         break;
+
                     case 2:
                         int minus = CAITypeOfProblems.twoDigitSubtraction(10);
                         CAIStudentPerformance.checkPercentage(minus);
                         break;
+
                     case 3:
                         int times = CAIDifficultLevel.twoDigitMultiplication(10);
                         CAIStudentPerformance.checkPercentage(times);
                         break;
+
                     case 4:
                         int divide = CAITypeOfProblems.twoDigitDivide(10);
                         CAIStudentPerformance.checkPercentage(divide);
                         break;
+
                     case 5:
                         int mix = CAITypeOfProblems.twoDigitMixedArithmetic();
                         CAIStudentPerformance.checkPercentage(mix);
                         break;
+
                     default:
 
                         while (answerTwo < 1 || answerTwo > 5) {
@@ -124,15 +137,19 @@ public class CAITypeOfProblemMain {
                             if (answer == 1) {
                                 add = CAITypeOfProblems.twoAddition(10);
                                 CAIStudentPerformance.checkPercentage(add);
+
                             } else if (answer == 2) {
                                 minus = CAITypeOfProblems.twoDigitSubtraction(10);
                                 CAIStudentPerformance.checkPercentage(minus);
+
                             } else if (answer == 3) {
                                 times = CAIDifficultLevel.twoDigitMultiplication(10);
                                 CAIStudentPerformance.checkPercentage(times);
+
                             } else if (answer == 4) {
                                 divide = CAITypeOfProblems.twoDigitDivide(10);
                                 CAIStudentPerformance.checkPercentage(divide);
+
                             } else if (answer == 5) {
                                 mix = CAITypeOfProblems.twoDigitMixedArithmetic();
                                 CAIStudentPerformance.checkPercentage(mix);
