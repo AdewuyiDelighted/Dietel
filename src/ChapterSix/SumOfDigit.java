@@ -1,10 +1,6 @@
 package ChapterSix;
 
 public class SumOfDigit {
-    public static void main(String[] args) {
-
-        System.out.println(sumOfDigit(7631));
-    }
 
 
     public static int sumOfDigit(int input){

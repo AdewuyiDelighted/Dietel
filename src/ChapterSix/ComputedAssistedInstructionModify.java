@@ -4,9 +4,6 @@ import java.security.SecureRandom;
 import java.util.Scanner;
 
 public class ComputedAssistedInstructionModify {
-    public static void main(String[] args) {
-        questions();
-    }
 
     public static void questions() {
         Scanner scanner = new Scanner(System.in);

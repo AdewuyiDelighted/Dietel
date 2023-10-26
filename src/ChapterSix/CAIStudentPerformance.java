@@ -6,9 +6,7 @@ import java.util.Scanner;
 public class CAIStudentPerformance {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        combine();
-    }
+
 
 
     public static int computeStudentPerformance(int count) {

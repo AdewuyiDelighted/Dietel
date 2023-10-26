@@ -6,9 +6,6 @@ import java.util.Scanner;
 public class CAIDifficultLevel {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        selectLevel();
-    }
 
     public static void selectLevel() {
         System.out.println("Enter 1 for easy level or enter 2 for difficult level");

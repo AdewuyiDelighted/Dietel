@@ -1,11 +1,12 @@
 package ChapterSix;
 
+import java.util.Scanner;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ComputedAssistedInstructionModifyTest {
+class CAIDifficultLevelTest {
     public static void main(String[] args) {
-        ComputedAssistedInstructionModify.questions();
+        CAIDifficultLevel.selectLevel();
     }
-
 
 }

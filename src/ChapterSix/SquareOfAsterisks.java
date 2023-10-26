@@ -3,12 +3,6 @@ package ChapterSix;
 import java.util.Scanner;
 
 public class SquareOfAsterisks {
-    public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the side of square");
-        int sides = scanner.nextInt();
-        buildSquare(sides);
-    }
 
 
     public static void buildSquare(int side){
