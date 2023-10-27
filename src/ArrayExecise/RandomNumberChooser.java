@@ -4,6 +4,7 @@ import java.security.SecureRandom;
 
 public class RandomNumberChooser {
     public static void main(String[] args) {
+
         System.out.println(getRandom(1,2,3,4,5,6,7,8,9));
     }
 
