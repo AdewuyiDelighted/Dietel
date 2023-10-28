@@ -12,6 +12,10 @@ public class RandomNumbers {
             SecureRandom random = new SecureRandom();
             int numRam = random.nextInt(1, 5);
             run[numRam] = 1;
+
+
+
+            System.out.println(numRam);
         
 
 

@@ -4,7 +4,6 @@ public class TwoIndicesAndTarget {
 
 
     public static boolean twoIndicesAndTarget(String number,int indexOne,int indexTwo,int target){
-        //String numbers = String.valueOf(number);
         String valueOne = number.charAt(indexOne) +"";
 
         int intValueOne = Integer.parseInt(valueOne);
