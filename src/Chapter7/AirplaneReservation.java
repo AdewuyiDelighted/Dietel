@@ -10,51 +10,54 @@ public class AirplaneReservation {
         Scanner scanner = new Scanner(System.in);
 
 
-
         boolean[] planeSeats = new boolean[10];
 
         ArrayList<Integer> firstClassSeat = randomNumForFirstClassSeats();
         ArrayList<Integer> economyClassSeat = randomNumForEconomyClassSeats();
 
         String reservationSeat = "yes";
+        String firstAnswer = "yess";
 
 
         int firstCount = 0;
         int economyCount = 0;
-
+        int answer = 0;
 
 
         while (reservationSeat.equals("yes")) {
+
             print("Please type 1 for first class and please type 2 for economy");
             int classAnswer = scanner.nextInt();
             if (classAnswer == 1) {
 
-                int seatNumbers = firstClassSeat.get(firstCount);
-                planeSeats[seatNumbers] = true;
-                System.out.printf("%s%d%s%n", "Your seat number is ", seatNumbers + 1, " in First Class");
-                System.out.println(Arrays.toString(planeSeats));
+                if (firstCount == 5) {
+                    print("We are sorry all the seat on first class has all been assigned,would you like a seat in the economy class");
+                    firstAnswer = scanner.next();
+                    if (firstAnswer.equals("yess")) {
+                        System.out.println("enter 2");
+                       answer = scanner.nextInt();
+                    }
+                }
+                    int seatNumbers = firstClassSeat.get(firstCount);
+                    planeSeats[seatNumbers] = true;
+                    System.out.printf("%s%d%s%n", "Your seat number is ", seatNumbers + 1, " in First Class");
+                    print(Arrays.toString(planeSeats));
+                    firstCount++;
 
-            } else if (classAnswer == 2) {
+                } else if (classAnswer == 2 || answer == 2) {
 
-                int seatNumber = economyClassSeat.get(economyCount);
-                planeSeats[seatNumber] = true;
-                System.out.printf("%s%d%s%n", "Your seat number is ", seatNumber + 1, " in Economy Class");
-                System.out.println(Arrays.toString(planeSeats));
+                    int seatNumber = economyClassSeat.get(economyCount);
+                    planeSeats[seatNumber] = true;
+                    System.out.printf("%s%d%s%n", "Your seat number is ", seatNumber + 1, " in Economy Class");
+                    print(Arrays.toString(planeSeats));
+                    economyCount++;
+                }
+                print("Is there more seat reservation to be made ?,Enter yes  or no");
+                reservationSeat = scanner.next();
             }
-            print("Is there more seat reservation to be made ?,Enter yes  or no");
-            reservationSeat = scanner.next();
-            firstCount++;
-            economyCount++;
-        }
-        System.out.println(Arrays.toString(planeSeats));
+        print(Arrays.toString(planeSeats));
 
-    }
-
-
-
-
-
-
+}
 
 
     private static ArrayList<Integer> randomNumForFirstClassSeats() {
