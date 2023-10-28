@@ -26,6 +26,27 @@ class SortTest {
         int [] check = Sort.ascending(number);
         assertArrayEquals(answer,check);
     }
+    @Test
+    public void testThatFunctionSortNumbersInDescendingOrder(){
+        int [] number = {23,4,12,6,2,50,98,15};
+        int [] answer = {98,50,23,15,12,6,4,2};
+        int [] check = Sort.descending(number);
+        assertArrayEquals(answer,check);
+    }
+    @Test
+    public void testThatFunctionSortNumbersInDescendingOrderTwo(){
+        int [] number = {45,29,20,34,25};
+        int [] answer = {45,34,29,25,20};
+        int [] check = Sort.descending(number);
+        assertArrayEquals(answer,check);
+    }
+    @Test
+    public void testThatFunctionSortNumbersInDescendingOrderThree(){
+        int [] number = {2,9,5,4,8,1,6};
+        int [] answer = {9,8,6,5,4,2,1};
+        int [] check = Sort.descending(number);
+        assertArrayEquals(answer,check);
+    }
 
 
 
