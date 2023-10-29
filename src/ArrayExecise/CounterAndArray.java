@@ -3,7 +3,7 @@ package ArrayExecise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DistinctNumbers {
+public class CounterAndArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int count = 0;
