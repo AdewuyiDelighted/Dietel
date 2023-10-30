@@ -9,7 +9,6 @@ public class AirplaneReservation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
         boolean[] planeSeats = new boolean[10];
 
         ArrayList<Integer> firstClassSeat = randomNumForFirstClassSeats();
@@ -60,6 +59,14 @@ public class AirplaneReservation {
     }
 
 
+
+
+
+
+
+
+
+
     private static ArrayList<Integer> randomNumForFirstClassSeats() {
         ArrayList<Integer> firstClassSeats = new ArrayList<>();
         for (int index = 0; index < 5; index++) {
@@ -68,6 +75,11 @@ public class AirplaneReservation {
         Collections.shuffle(firstClassSeats);
         return firstClassSeats;
     }
+
+
+
+
+
 
     private static ArrayList<Integer> randomNumForEconomyClassSeats() {
         ArrayList<Integer> economyClassSeats = new ArrayList<>();

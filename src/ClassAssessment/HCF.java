@@ -23,6 +23,7 @@ public class HCF {
         return max;
     }
 
+
     public static ArrayList<Integer> maxPrimeFactors(int... numbers) {
         int maximum = maximum(numbers);
         int divisor = 2;
