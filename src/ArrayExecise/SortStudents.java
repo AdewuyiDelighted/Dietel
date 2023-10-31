@@ -10,37 +10,36 @@ public class SortStudents {
         System.out.println("Enter the number of student");
         int noOfStudent = scanner.nextInt();
 
-        int[] scores = new int[noOfStudent];
-        String[] names = new String[noOfStudent];
+        int [] studentScores = new int[noOfStudent];
+        String [] studentNames = new String [noOfStudent];
 
-        int[] sortedScores = new int[noOfStudent];
-        String[] sortedNames = new String[noOfStudent];
-        int nameIndex = 0;
-
-
-        for (int index = 0; index < noOfStudent; index++) {
-            //System.out.println("Enter name of student " + (index + 1));
-            //names[index] = scanner.next();
-            System.out.println("Enter the score of student" + (index + 1));
-            scores[index] = scanner.nextInt();
+        for(int index = 0; index < noOfStudent;index++){
+            System.out.println("Enter name of student "+(index+1));
+            studentNames[index] = scanner.next();
+            System.out.println("Enter score of student "+(index+1));
+            studentScores[index] = scanner.nextInt();
         }
 
-        for (int indexs = 0; indexs < scores.length; indexs++) {
-            for (int indices = 0; indexs < scores.length; indexs++) {
+        for(int indices = 0; indices < studentScores.length; indices++){
+            for(int count = indices +1; count < studentScores.length; count++){
+                int maxi = studentScores[indices];
 
-                int largest = scores[indexs];
-                if (scores[indices] < largest) {
-                    int temp = scores[indexs];
-                    //nameIndex = indices;
-                    sortedScores[indexs] = scores[indices];
-                    scores[indices] = temp;
-                    //sortedNames[indexs] = names[nameIndex];
+                if(studentScores[count] > maxi){
+                    int temp = studentScores[indices];
+                    String tempNames = studentNames[indices];
+
+                    studentNames[indices] = studentNames[count];
+                    studentScores[indices] = studentScores[count];
+                    studentScores[count] = temp;
+                    studentNames[count] = tempNames;
+
+
                 }
+
             }
         }
-
-        System.out.println(Arrays.toString(sortedScores));
-        //System.out.println(Arrays.toString(sortedNames));
+        System.out.println(Arrays.toString(studentScores));
+        System.out.println(Arrays.toString(studentNames));
 
     }
 

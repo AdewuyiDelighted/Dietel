@@ -23,25 +23,20 @@ public class AirplaneReservation {
         int answer = 0;
 
 
+
         while (reservationSeat.equals("yes")) {
 
             print("Please type 1 for first class and please type 2 for economy");
-            int classAnswer = scanner.nextInt();
+           int classAnswer = scanner.nextInt();
             if (classAnswer == 1) {
 
-                if (firstCount == 5) {
-                    print("We are sorry all the seat on first class has all been assigned,would you like a seat in the economy class");
-                    String firstAnswers = scanner.next();
-                    if (firstAnswers.equals(firstAnswer)) {
-                        System.out.println("enter 2");
-                        answer = scanner.nextInt();
-                    }
+                if(firstCount <= 4) {
+                    int seatNumbers = firstClassSeat.get(firstCount);
+                    planeSeats[seatNumbers] = true;
+                    System.out.printf("%s%d%s%n", "Your seat number is ", seatNumbers + 1, " in First Class");
+                    print(Arrays.toString(planeSeats));
+                    firstCount++;
                 }
-                int seatNumbers = firstClassSeat.get(firstCount);
-                planeSeats[seatNumbers] = true;
-                System.out.printf("%s%d%s%n", "Your seat number is ", seatNumbers + 1, " in First Class");
-                print(Arrays.toString(planeSeats));
-                firstCount++;
 
             } else if (classAnswer == 2 || answer == 2) {
 
@@ -50,20 +45,27 @@ public class AirplaneReservation {
                 System.out.printf("%s%d%s%n", "Your seat number is ", seatNumber + 1, " in Economy Class");
                 print(Arrays.toString(planeSeats));
                 economyCount++;
+
+
             }
+
             print("Is there more seat reservation to be made ?,Enter yes  or no");
             reservationSeat = scanner.next();
+
+
+            if (firstCount == 5) {
+                print("We are sorry all the seat on first class has all been assigned,would you like a seat in the economy class");
+                String firstAnswers = scanner.next();
+                if (firstAnswers.equals(firstAnswer)) {
+                    answer = scanner.nextInt();
+                }
+            }
         }
-        print(Arrays.toString(planeSeats));
+
+
+            print(Arrays.toString(planeSeats));
 
     }
-
-
-
-
-
-
-
 
 
 
@@ -75,10 +77,6 @@ public class AirplaneReservation {
         Collections.shuffle(firstClassSeats);
         return firstClassSeats;
     }
-
-
-
-
 
 
     private static ArrayList<Integer> randomNumForEconomyClassSeats() {
