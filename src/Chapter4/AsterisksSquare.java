@@ -13,7 +13,7 @@ public class AsterisksSquare {
                 System.out.print("* ");
             }
             System.out.println();
-            //System.out.print(" ");
+
 
         }
     }

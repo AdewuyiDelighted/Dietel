@@ -13,6 +13,7 @@ public class PrimeNumbersArray {
         int number = 2;
         int index = 0;
 
+
         while (count < NUMBER_OF_PRIME_NUMBER) {
             boolean isPrime = true;
 
@@ -21,7 +22,10 @@ public class PrimeNumbersArray {
             double convertedSquareRoot = Double.parseDouble(strSquareRoot);
 
             if (convertedSquareRoot == number && convertedSquareRoot < number) {
-                isPrime = false;
+                    if(convertedSquareRoot % number == 0){
+                        isPrime = false;
+                    }
+
             }
 
             if (isPrime) {
