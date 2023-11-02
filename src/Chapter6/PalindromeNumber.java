@@ -1,9 +1,7 @@
 package Chapter6;
 
 public class PalindromeNumber {
-    public static void main(String[] args) {
-        System.out.println(palindrome(12321));
-    }
+
 
 
     public static boolean palindrome(int number) {

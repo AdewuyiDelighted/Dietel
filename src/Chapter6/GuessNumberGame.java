@@ -4,9 +4,7 @@ import java.security.SecureRandom;
 import java.util.Scanner;
 
 public class GuessNumberGame {
-    public static void main(String[] args) {
-        guessGame();
-    }
+
 
     public static void guessGame() {
         int stopper = 0;

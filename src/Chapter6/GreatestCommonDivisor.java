@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class GreatestCommonDivisor {
-    public static void main(String[] args) {
-        System.out.println(findGcd(12,36));
-    }
+
 
     public static ArrayList<Integer> findFactors(int firstNumber,int secondNumber){
         int length = Math.max(firstNumber,secondNumber);

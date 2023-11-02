@@ -1,10 +1,6 @@
 package Chapter6;
 
 public class TwoDistances {
-    public static void main(String[] args) {
-        System.out.println(distance(3,2,7,8));
-
-    }
 
 
     public static double distance(int sideOneHorizontal,int sideOneVertical, int sideTwoHorizontal,int sideTwoVertical){

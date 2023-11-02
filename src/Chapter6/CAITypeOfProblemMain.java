@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class CAITypeOfProblemMain {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        typeOfProblems();
-    }
 
     public static void typeOfProblems() {
         System.out.println("Enter 1 for easy question or enter 2 for difficult question");

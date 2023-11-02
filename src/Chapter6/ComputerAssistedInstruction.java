@@ -6,11 +6,6 @@ import java.util.Scanner;
 public class ComputerAssistedInstruction {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        promptStudent();
-
-
-    }
 
     public static void promptStudent() {
         SecureRandom secureRandom = new SecureRandom();

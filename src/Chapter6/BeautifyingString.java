@@ -1,9 +1,7 @@
 package Chapter6;
 
 public class BeautifyingString {
-    public static void main(String[] args) {
-        System.out.println(beautifyString("i am a boy"));
-    }
+
     public static String addFullStop(String words){
         int length = words.length();
         char lastCharacter = words.charAt(length-1);

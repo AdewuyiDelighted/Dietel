@@ -3,12 +3,6 @@ package Chapter6;
 import java.util.Scanner;
 
 public class SportRecommender {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your temperature today before sport");
-        int temperature = scanner.nextInt();
-        sportRecommender(temperature);
-    }
 
     public static void sportRecommender(int celsiusTemperature) {
         if (celsiusTemperature >= 20 && celsiusTemperature < 30) {

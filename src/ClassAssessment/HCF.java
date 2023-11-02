@@ -8,7 +8,6 @@ import java.util.Arrays;
 public class HCF {
 
 
-
     public static int maximum(int... numbers) {
         int length = numbers.length;
         int max = numbers[0];
@@ -38,7 +37,7 @@ public class HCF {
 
     }
 
-    public static int [] highestCommonFactor(int... numbers) {
+    public static int[] highestCommonFactor(int... numbers) {
         ArrayList<Integer> maxPrimeNumbers = maxPrimeFactors(numbers);
         ArrayList<Integer> hcf = new ArrayList<>();
         int numberOfDivide = 0;
@@ -55,14 +54,14 @@ public class HCF {
             if (numberOfDivide == numbers.length) {
                 hcf.add(divisor);
             }
-                numberOfDivide = 0;
+            numberOfDivide = 0;
         }
         return convertListToArray(hcf);
     }
 
-    public static int[] convertListToArray(ArrayList<Integer> inputs){
-        int [] array = new int [inputs.size()];
-        for(int index = 0;index < array.length;index++){
+    public static int[] convertListToArray(ArrayList<Integer> inputs) {
+        int[] array = new int[inputs.size()];
+        for (int index = 0; index < array.length; index++) {
             array[index] = inputs.get(index);
         }
         return array;

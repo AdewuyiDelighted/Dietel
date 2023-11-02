@@ -5,9 +5,7 @@ public class TableOfBinaryOctalHexadecimal {
     private static final int OCT_BASE = 8;
     private static final int HEX_BASE = 16;
 
-    public static void main(String[] args) {
-        System.out.println(decimalToOctal("8"));
-    }
+
 
 
     public static String decimalToBinary(int decimal){

@@ -3,9 +3,7 @@ package Chapter6;
 import java.util.ArrayList;
 
 public class PerfectNumber {
-    public static void main(String[] args) {
-        System.out.println(isPerfect(28));
-    }
+
 
     public static ArrayList<Integer> factors(int number) {
         ArrayList<Integer> keepFactors = new ArrayList<>();
