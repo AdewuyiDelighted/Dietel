@@ -20,4 +20,8 @@ public class HCFTest {
     int [] answer = HCF.highestCommonFactor(numbers);
     assertArrayEquals(result,answer);
     }
+    @Test
+    public void testThatFunctionCanComputeIfFactorsAreMoreThanTwo(){
+
+    }
 }

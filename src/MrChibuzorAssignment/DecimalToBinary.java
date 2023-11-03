@@ -1,11 +1,6 @@
 package MrChibuzorAssignment;
 
 public class DecimalToBinary {
-    public static void main(String[] args) {
-        System.out.println(decimalToBinary(13));
-
-
-    }
 
 
     public static String convertToBinary(int decimal) {

@@ -1,9 +1,6 @@
 package MrChibuzorAssignment;
 
 public class BinaryToDecimal {
-    public static void main(String[] args) {
-        System.out.println(convertToDecimal("10000"));
-    }
 
     public static String reverse(String binary) {
         String reverse = "";
