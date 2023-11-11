@@ -7,8 +7,8 @@ public class Person{
 
     Problem oneProblem = new Problem("name", ProblemType.BUSINESS);
 
-    public void add(Problem oneProblem){
-        problem.add(oneProblem);
+    public void add(Problem prob){
+        problem.add(prob);
 
     }
     public void solve(){
