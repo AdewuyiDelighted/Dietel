@@ -194,13 +194,13 @@ public class MBTITest {
                     break;
                 case 4:
                     System.out.println("""
-                            A.Facts,Things,What is                                                                  B.Ideas,Dreams,What Could Be""");
+                            A.Facts,Thing,What is                                                                  B.Ideas,Dreams,What Could Be""");
                     String questionTen = scanner.nextLine().toUpperCase();
                     while (!(questionTen.equals(response) || questionTen.equals(responseTwo))) {
                         System.out.println("Error");
                     }
                     if (questionTen.equals(response)) {
-                        setTwo[index] = "Facts,Things,What is";
+                        setTwo[index] = "Facts,Thing,What is";
                     } else if (questionTen.equals(responseTwo)) {
                         setTwo[index] = "Ideas,Dreams,What Could Be";
 
