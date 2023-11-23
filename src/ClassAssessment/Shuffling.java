@@ -3,10 +3,6 @@ package ClassAssessment;
 import java.util.Arrays;
 
 public class Shuffling {
-    public static void main(String[] args) {
-        int [] array = {42,15,18,12,13};
-        System.out.println(Arrays.toString(shuffleNumber(array)));
-    }
     public static int[] shuffle(int[] array) {
         int length = array.length;
         int[] newArray = new int[array.length];
