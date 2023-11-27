@@ -25,7 +25,7 @@ public static int priceOfCopies(int copy){
         return copy * 1600;
         }
         else if (copy < 50) {
-            return copy *1500;
+            return copy * 1500;
         }
         else if (copy < 100) {
             return copy * 1300;
