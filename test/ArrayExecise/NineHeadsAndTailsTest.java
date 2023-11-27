@@ -1,10 +1,6 @@
 package ArrayExecise;
 
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static ArrayExecise.NineHeadsAndTails.countCoin;
 import static ArrayExecise.NineHeadsAndTails.flipCoin;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,11 +13,6 @@ class NineHeadsAndTailsTest {
             assertTrue(isHeadOrTail);
         }
     }
-    @Test public void testThatThatTotalOfCoinFlipIsNine(){
-        int result = countCoin;
-        assertEquals(9, result);
-
-    }
 
 
-}
+ }

@@ -4,7 +4,8 @@ import java.security.SecureRandom;
 import java.util.Arrays;
 
 public class NineHeadsAndTails {
-   static int countCoin = 0;
+    static int countCoin = 0;
+
     public static int flipCoin() {
         SecureRandom secureRandom = new SecureRandom();
         return secureRandom.nextInt(0, 2);
