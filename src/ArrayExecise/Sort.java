@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Sort {
     public static void main(String[] args) {
-        int [] number = {34,12,56,7,23,4,13};
-        System.out.println(Arrays.toString(descending(number)));
+        int [] number = {10,12,13,14};
+        System.out.println(Arrays.toString(ascending(number)));
     }
 
     public static int [] ascending(int [] number){

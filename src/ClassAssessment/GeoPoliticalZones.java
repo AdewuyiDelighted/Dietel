@@ -15,10 +15,12 @@ public enum GeoPoliticalZones {
         this.states = states;
     }
     public String[] getStates() {
+
         return states;
     }
 
     public static void setInput() {
+
         System.out.println(Arrays.toString(GeoPoliticalZones.values()));
     }
 
