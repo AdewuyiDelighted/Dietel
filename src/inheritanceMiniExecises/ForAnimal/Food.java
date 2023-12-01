@@ -1,11 +1,11 @@
 package inheritanceMiniExecises.ForAnimal;
 
 public class Food {
-    private Food food;
-    public Food(Food food){
+    private String food;
+    public Food(String food){
         this.food = food;
     }
-    public Food getFood(){
+    public String getFood(){
         return food; 
     }
 }

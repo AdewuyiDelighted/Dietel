@@ -4,9 +4,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class HoursOfWork {
-    public static void main(String[] args) {
-        workHour();
-    }
 
 
     public static int[][] inputWorkHours() {
@@ -55,7 +52,7 @@ public class HoursOfWork {
         for (int index = 0; index < totalHourPerEmployee.length; index++) {
             for (int count = index + 1; count < totalHourPerEmployee.length; count++) {
                 int miniHour = totalHourPerEmployee[index];
-                if(totalHourPerEmployee[count] > miniHour){
+                if (totalHourPerEmployee[count] > miniHour) {
                     int temp = totalHourPerEmployee[index];
                     totalHourPerEmployee[index] = totalHourPerEmployee[count];
                     totalHourPerEmployee[count] = temp;
