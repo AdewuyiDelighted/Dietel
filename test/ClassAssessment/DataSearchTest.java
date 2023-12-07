@@ -17,8 +17,6 @@ public class DataSearchTest {
         int row = 1;
         int start = 1;
         int end = 5;
-
-        //int [] result = {40,23,85,62};
         int [] answer = dataSearch.extract(data,row,start,end);
         assertEquals(40,answer[0]);
         assertEquals(23,answer[1]);
