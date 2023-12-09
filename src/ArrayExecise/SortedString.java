@@ -1,36 +1,46 @@
 package ArrayExecise;
 
+import java.util.Arrays;
+
 public class SortedString {
-    public static void main(String[] args) {
-        System.out.println(sortStrings("acb"));
-    }
-    public static String  sortStrings(String words) {
-        int smallest = 0;
-        char charSmallest = '0';
-        char charOther = '0';
-        StringBuilder word = new StringBuilder(words);
-        for(int index = 0;index < words.length();index++) {
-            for (int count = index+1; count < words.length(); count++) {
-                smallest = words.charAt(index);
-                int others = words.charAt(count);
-                if (others < smallest) {
-                    int temp = others;
-                    charSmallest = (char) smallest;
-                    charOther = (char) temp;
-                    System.out.println(charSmallest);
-                    System.out.println(charOther);
+
+    public static String sortStrings(String words) {
+        String[] wordArray = convertStringToArray(words);
+        int count = 0;
+        for (int index = 0; index < wordArray.length; index++) {
+            while (count < wordArray.length - 1){
+                count++;
+
+                int numericalValueOfIndex = words.charAt(index);
+                int numericalValueOfCount = words.charAt(count);
+
+                if (numericalValueOfCount < numericalValueOfIndex) {
+                    wordArray[index] = String.valueOf(words.charAt(count));
+                    wordArray[count] = String.valueOf(words.charAt(index));
                 }
-                word.setCharAt(index,charSmallest);
-                word.setCharAt(count,charOther);
             }
-
-
-
+            count = index + 1;
         }
-
-        return words;
-        }
-
-
+        return convertArrayToString(wordArray);
     }
+
+
+    private static String[] convertStringToArray(String words) {
+        String[] arrayOfWord = new String[words.length()];
+        for (int index = 0; index < words.length(); index++) {
+            arrayOfWord[index] = String.valueOf(words.charAt(index));
+        }
+        return arrayOfWord;
+    }
+
+    private static String convertArrayToString(String[] word) {
+        String arrayToString = "";
+        for (int index = 0; index < word.length; index++){
+            arrayToString += word[index];
+        }
+        return arrayToString;
+    }
+
+
+}
 

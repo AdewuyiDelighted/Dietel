@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class DataSearchTest {
     @Test
-    public void testTheFuntionOfDataColum(){
+    public void testTheFunctionReturnTheElemenet(){
         DataSearch dataSearch = new DataSearch();
         int[][] data = {
                 {40,23,85,62},
