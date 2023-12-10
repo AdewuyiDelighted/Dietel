@@ -13,14 +13,11 @@ public class SortedString {
             while (count < wordArray.length - 1) {
                 count++;
 
-                int numericalValueOfIndex = wordArray[index];
-                int numericalValueOfCount = wordArray[count];
-                int smallestChar = numericalValueOfIndex;
+                int numericalValueOfIndex = wordArray[index]; int numericalValueOfCount = wordArray[count];
+
                 if (numericalValueOfCount < numericalValueOfIndex) {
-                    smallestChar = numericalValueOfCount;
                     char temp = wordArray[index];
-                    wordArray[index] = wordArray[count];
-                    wordArray[count] = temp;
+                    wordArray[index] = wordArray[count]; wordArray[count] = temp;
                 }
             }
             count = index + 1;
@@ -39,8 +36,8 @@ public class SortedString {
 
     private static String convertArrayToString(char[] word) {
         String arrayToString = "";
-        for (int index = 0; index < word.length; index++) {
-            arrayToString += word[index];
+        for (char c : word) {
+            arrayToString += c;
         }
         return arrayToString;
     }
