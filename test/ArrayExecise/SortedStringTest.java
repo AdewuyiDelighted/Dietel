@@ -22,5 +22,19 @@ class SortedStringTest {
         String result = SortedString.sortStrings(letters);
         assertEquals("bbdey",result);
     }
+    @Test public void whenWordAreNotAlphabeticallyInorderAndWordIsQuiteLongerTest(){
+        String letters = "television";
+        String result = SortedString.sortStrings(letters);
+        assertEquals("eeiilnostv",result);
+    }
+    @Test public void whenWordAreInUppercaseTest(){
+        String letters = "LOVE";
+assertThrows(InvalidInputException.class,()->SortedString.sortStrings(letters));
+
+    }
+
+
+
+
 
 }
