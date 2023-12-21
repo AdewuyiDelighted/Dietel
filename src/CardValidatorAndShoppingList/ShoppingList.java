@@ -38,14 +38,14 @@ public class ShoppingList {
     public static void informationPrintOut(String cashierName, String customerName) {
         String currentDateWa = currentDate();
 
-        System.out.println("""
+        System.out.printf("""
                 SEMICOLON STORES
                 MAIN BRANCH
                 LOCATION:312,HERBERT MACAULAY WAY,SABO YABA
                 TEL : 03293828343
-                Date: """ + currentDateWa);
-        System.out.println("Cashier : " + cashierName + "\n" + "Customer Name: " + customerName);
-
+                Date:%s
+                Cashier:%s
+                Customer name:%s%n""",currentDateWa,cashierName,customerName);
         System.out.printf("%9s%9s%9s%9s%n%s%n", "ITEM", "QTY", "PRICE", "TOTAL",
                 "_________________________________________________");
 
@@ -71,20 +71,18 @@ public class ShoppingList {
 
     public static String promptCustomerName() {
         print("Kindly Enter The Customer's Name");
-        String customerName = scanner.nextLine();
-        return customerName;
+        return scanner.nextLine();
     }
 
     public static String promptProductName() {
         print("Enter the name of item the customer purchased");
-       String product = scanner.nextLine();
-        scanner.nextLine();
-        return product;
+       return scanner.next();
+
     }
     public static int promptQuantityOfProduct() {
         print("Enter the quantity of item");
-        int quantity = scanner.nextInt();
-        return quantity;
+       return scanner.nextInt();
+
 
     }
 
