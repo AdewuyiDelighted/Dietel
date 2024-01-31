@@ -1,8 +1,5 @@
 package mrjonathanExercise;
 
-import java.lang.reflect.Array;
-import java.util.Collections;
-
 public class MostAppearedElement {
     public static int mostAppearedElement(int[] input) {
         int countAppearance = 0;
