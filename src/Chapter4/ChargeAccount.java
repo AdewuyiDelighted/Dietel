@@ -1,13 +1,15 @@
 package Chapter4;
 
 public class ChargeAccount {
-
-
-
     private int accountNumber;
     private int purchase;
     private int credit;
     private int totalBalance;
+    public  ChargeAccount (int accountNumber,int purchase,int credit,int totalBalance){
+
+    }
+
+
     public void setAccountNumber(int acctNumber) {
         this.accountNumber = acctNumber;
 
@@ -53,4 +55,7 @@ public class ChargeAccount {
         return  total;
 
     }
+
+
+
 }
