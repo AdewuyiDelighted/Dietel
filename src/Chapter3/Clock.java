@@ -2,16 +2,16 @@ package Chapter3;
 
 public class Clock {
 
-    private int hour;
+    private  int hour;
     private int minute;
     private int second;
 
-    public Clock(int hour, int minute, int second) {
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
-
-    }
+//    public Clock(int hour, int minute, int second) {
+//        this.hour = hour;
+//        this.minute = minute;
+//        this.second = second;
+//
+//    }
 
     public void setHour(int hours) {
         if (hours <= 23) {
@@ -49,25 +49,22 @@ public class Clock {
 
     }
 
+    public static void addClock() {
+
+    }
+
     public int getSecond() {
         return second;
     }
-    public String getDisplayTime(){
-        String out = hour+":"+minute+":"+second;
+
+    public String getDisplayTime() {
+        String out = hour + ":" + minute + ":" + second;
         return out;
 
 
-
-
-
-
     }
 
 
-
-
-
-
-    }
+}
 
 
