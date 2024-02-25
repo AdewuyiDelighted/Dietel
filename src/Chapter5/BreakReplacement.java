@@ -2,16 +2,15 @@ package Chapter5;
 
 public class BreakReplacement {
     public static void main(String[] args) {
-        breakReplacement(7);
+        breakReplacement(12,10);
 
     }
-        public static void breakReplacement(int number){
-        int numberBefore = number - 1;
-        for(int count = 1;count <= 10;){
+        public static void breakReplacement(int number,int numberBefore){
+        for(int count = 1;count <= number;){
             System.out.println(count);
             count++;
-            if(count > numberBefore){
-               count = count + count +1;
+            if(count > numberBefore -1){
+               count = count + number;
             }
         }
     }
