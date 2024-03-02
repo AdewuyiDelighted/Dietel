@@ -8,6 +8,8 @@ public class SupplierSample {
 //       Supplier is a functional interface
 
 //        Supplier<String> supplier = () ->
+//
+
 
     }
 }

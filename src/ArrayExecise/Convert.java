@@ -10,5 +10,13 @@ public class Convert {
         }
         return array;
     }
+    public static String[] convertListToArrayString(ArrayList<String> stringElement) {
+        String[] array = new String[stringElement.size()];
+        for (int index = 0; index < stringElement.size(); index++) {
+            array[index] = stringElement.get(index);
+        }
+        return array;
+    }
+
 
 }
