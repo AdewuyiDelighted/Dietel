@@ -20,7 +20,6 @@ public class TextAnalysisThree {
 
 
     private static int countWord(String text, String word) {
-
         String[] arrayText = text.split(" ");
         int counter = 0;
         for (int indice = 0; indice < arrayText.length; indice++) {
