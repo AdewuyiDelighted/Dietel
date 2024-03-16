@@ -17,8 +17,5 @@ public class PastorChild extends Pastor{
 
     }
 
-    public static void main(String[] args) {
-        PastorChild pastorChild = new PastorChild();
 
-    }
 }
