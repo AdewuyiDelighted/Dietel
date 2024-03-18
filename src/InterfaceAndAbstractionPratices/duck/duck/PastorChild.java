@@ -11,11 +11,11 @@ public class PastorChild extends Pastor{
         System.out.println("I stand while praying");
 
     }
-    public void prays(int name){
-        System.out.println("I stand while praying");
-        System.out.println(1);
-
-    }
+//    public void prays(int name){
+//        System.out.println("I stand while praying");
+//        System.out.println(1);
+//
+//    }
 
 
 }
