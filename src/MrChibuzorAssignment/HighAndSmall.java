@@ -7,6 +7,7 @@ public class HighAndSmall{
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number or 0 to quit ");
         int number = scanner.nextInt();
+
         int highest =  number;
         int smallest = number;
 
