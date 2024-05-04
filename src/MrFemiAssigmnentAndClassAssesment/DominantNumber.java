@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DominantNumber {
-    public static void main(String[] args) {
-        int[] array = {57,2,19,2};
-        System.out.println(Arrays.toString(dominant(array)));
-    }
+
     public static int [] dominant(int[] array) {
         int count = 0;
         int counter = 0;
